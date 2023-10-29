@@ -1,4 +1,4 @@
-import { montserrat, montserrat2 } from "@/pages/_app";
+import { Montserrat2, MontserratAlternates } from "@/pages/_app";
 import { IconShoppingCart } from "@tabler/icons-react";
 import { useEffect } from 'react';
 
@@ -19,7 +19,7 @@ export default function HomeWelcomeContent(){
         <div className="flex flex-col justify-center p-40 pt-56 gap-7">
                 <p 
                     className={`
-                        font-montserrat_alternate text-2xl select-none ${montserrat2.variable}
+                        font-montserrat_alternate text-2xl select-none ${Montserrat2.variable}
                         duration-1000 transition-all opacity-0 
                     `}
                     data-replace='{ "opacity-0": "opacity-1" }'
@@ -28,7 +28,7 @@ export default function HomeWelcomeContent(){
                 </p>
                 <h1 
                     className={`
-                        font-montserrat_alternate  text-7xl select-none ${montserrat.variable}
+                        font-montserrat_alternate  text-7xl select-none ${MontserratAlternates.variable}
                         duration-1000 relative transform transition-all translate-x-[-100%] ease-out
                     `}
                     data-replace='{ "translate-x-[-100%]": "translate-x-0" }'

@@ -1,34 +1,34 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import HomeGoods from "@/components/HomeGoods/HomeGoods";
-import { montserrat } from "@/pages/_app";
+import { MontserratAlternates } from "@/pages/_app";
 
 
 export default function HomeGoodsRender(){
-    const [isVisible, setIsVisible] = useState(false);
+    const [txtVisible, setTxtVisible] = useState(false);
 
-    const handleScroll = () => {
+    const handleScroll = useCallback(function (){
         const scrollY = window.scrollY;
-        const element = document.getElementById('element-to-animate');
+        const txt = document.getElementById('animacao-txt');
 
-        if (element && scrollY >= element.offsetTop - window.innerHeight / 2) {
-        setIsVisible(true);
+        if (txt && scrollY >= txt.offsetTop - window.innerHeight / 2) {
+            setTxtVisible(true);
         }
-    };
-
+    }, [])
+        
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
-        window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [handleScroll]);
     
     return(
         <section className="bg-palette-light pl-10 pt-10">
-            <h1 id="element-to-animate" 
+            <h1 id="animacao-txt" 
             className={`
-              text-black ${montserrat.variable} font-montserrat_alternate text-4xl 
+              text-black ${MontserratAlternates.variable} font-montserrat_alternate text-4xl 
                 duration-700 relative transform transition-all translate-x-[-100%] ease-out
-                ${isVisible ? 'translate-x-[0]' : 'translate-x-0'}
+                ${txtVisible ? 'translate-x-[0%]' : 'translate-x-0'}
             `}>
                 Nossas Principais Mercadorias
             </h1>
