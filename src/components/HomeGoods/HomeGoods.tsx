@@ -25,7 +25,7 @@ export default function HomeGoods() {
 
     return (
         <div className="p-10">
-            <div className="grid grid-cols-3 gap-10">
+            <div className="grid grid-cols-3 gap-60">
                 <span
                     id="animacao-card"
                     className={`

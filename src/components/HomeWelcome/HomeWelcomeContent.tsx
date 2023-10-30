@@ -16,10 +16,10 @@ export default function HomeWelcomeContent(){
       }, []);
 
     return(
-        <div className="flex flex-col justify-center p-40 pt-56 gap-7">
+        <div className="flex flex-col p-40 gap-7">
                 <p 
                     className={`
-                        font-montserrat_alternate text-2xl select-none ${Montserrat2.variable}
+                        font-montserrat_alternate text-3xl select-none ${Montserrat2.variable}
                         duration-1000 transition-all opacity-0 
                     `}
                     data-replace='{ "opacity-0": "opacity-1" }'
@@ -28,7 +28,7 @@ export default function HomeWelcomeContent(){
                 </p>
                 <h1 
                     className={`
-                        font-montserrat_alternate  text-7xl select-none ${MontserratAlternates.variable}
+                        font-montserrat_alternate  text-8xl select-none ${MontserratAlternates.variable}
                         duration-1000 relative transform transition-all translate-x-[-100%] ease-out
                     `}
                     data-replace='{ "translate-x-[-100%]": "translate-x-0" }'
@@ -38,7 +38,7 @@ export default function HomeWelcomeContent(){
                 <button 
                     className={`
                         flex justify-center items-center gap-2 
-                      bg-palette-light mt-5 text-palette-dark text-xl rounded-sm p-2 w-56 h-14 font-bold hover:bg-palette-lightgreen  
+                      bg-palette-light mt-5 text-palette-dark text-xl rounded-sm p-2 w-72 h-14 font-bold hover:bg-palette-lightgreen  
                         duration-1000 hover:text-palette-light tracking-tight hover:tracking-wide
                         relative transform transition-all translate-y-[-100%] ease-out    
                     `}

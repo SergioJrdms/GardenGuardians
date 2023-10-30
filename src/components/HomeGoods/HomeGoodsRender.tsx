@@ -23,16 +23,16 @@ export default function HomeGoodsRender(){
     }, [handleScroll]);
     
     return(
-        <section className="bg-palette-light pl-10 pt-10">
+        <section className="flex flex-col bg-palette-light p-14 gap-5">
             <h1 id="animacao-txt" 
             className={`
-              text-black ${MontserratAlternates.variable} font-montserrat_alternate text-4xl 
+              text-black ${MontserratAlternates.variable} font-montserrat_alternate text-5xl 
                 duration-700 relative transform transition-all translate-x-[-100%] ease-out
                 ${txtVisible ? 'translate-x-[0%]' : 'translate-x-0'}
             `}>
                 Nossas Principais Mercadorias
             </h1>
-            <HomeGoods />
+            <div className="flex flex-row justify-center "><HomeGoods /></div>
       </section>
     )
 }

@@ -16,7 +16,7 @@ export default function HomeHistory(){
               hover:text-white text-lg rounded-md p-2 font-bold flex justify-center items-center
             `}>
             <button>
-              Nossa História
+              Conheça mais sobre nós
             </button>
           </Link>
         </div>
