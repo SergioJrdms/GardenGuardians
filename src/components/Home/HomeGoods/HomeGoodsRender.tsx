@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import HomeGoods from "@/components/HomeGoods/HomeGoods";
+import HomeGoods from "@/components/Home/HomeGoods/HomeGoods";
 import { MontserratAlternates } from "@/pages/_app";
 
 
@@ -32,7 +32,7 @@ export default function HomeGoodsRender(){
             `}>
                 Nossas Principais Mercadorias
             </h1>
-            <div className="flex flex-row justify-center "><HomeGoods /></div>
+            <div><HomeGoods /></div>
       </section>
     )
 }

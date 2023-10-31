@@ -7,7 +7,7 @@ interface NewProductCardProps{
 export default function HomeNewProducts(props: NewProductCardProps){
     return(
         <div className="bg-palette-light h-[23rem] hover:scale-110 duration-300 hover:cursor-pointer">
-          <div className="bg-palette-mediumlight w-72 h-72 text-black">
+          <div className="bg-palette-mediumlight w-60 h-60 text-black">
              {props.product_img}
           </div>
           <div className="pt-2">

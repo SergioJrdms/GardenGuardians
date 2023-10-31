@@ -32,7 +32,7 @@ export default function Header(){
     return(
         <header className={` ${headerClasses} grid grid-cols-3 p-7  text-palette-light h-24`}>
             <p className={`flex flex-row items-center gap-2 text-2xl font-black font-montserrat_alternate ${MontserratAlternates.variable}`}>
-                <IconPlant2 className="w-9 h-10" /> <Link href={'/'} className="hover:text-palette-lightgreen duration-300"> GardenGuardians </Link>
+                <IconPlant2 className="w-9 h-10" /> <Link href={'./home'} className="hover:text-palette-lightgreen duration-300"> GardenGuardians </Link>
             </p>
             <HeaderMenu />
             <UserMenu />
