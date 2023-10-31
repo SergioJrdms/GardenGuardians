@@ -11,7 +11,9 @@ export default function UserMenu(){
                 <Link href={"./hearts"}>
                     <IconHeart className="w-7 h-10  hover:text-palette-lightgreen duration-300 cursor-pointer"/>
                 </Link>
-                <IconShoppingBag className="w-7 h-10 hover:hover:text-palette-lightgreen duration-300 cursor-pointer"/>
+                <Link href={"./cart"}>
+                    <IconShoppingBag className="w-7 h-10 hover:hover:text-palette-lightgreen duration-300 cursor-pointer"/>
+                </Link>
         </div>
     )
 }

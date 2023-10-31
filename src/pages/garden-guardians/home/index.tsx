@@ -40,7 +40,7 @@ export default function Home() {
       </section>
 
       <section>
-          <HomeNewProductsRender />
+        <HomeNewProductsRender />
       </section>
 
       <footer className="flex flex-row bg-palette-mediumlight text-black">
