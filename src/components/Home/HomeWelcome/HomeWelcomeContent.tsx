@@ -37,16 +37,19 @@ export default function HomeWelcomeContent(){
                 </h1>
                 <button 
                     className={`
-                        flex justify-center items-center gap-2 
+                        group
+                        flex  items-center space-x-20 
                       bg-palette-light mt-5 text-palette-dark text-xl rounded-sm p-2 w-72 h-14 font-bold hover:bg-palette-lightgreen  
-                        duration-1000 hover:text-palette-light tracking-tight hover:tracking-wide
+                        duration-300 hover:text-white tracking-tight hover:tracking-wide
                         relative transform transition-all translate-y-[-100%] ease-out    
                     `}
                     data-replace='{ "translate-y-[-100%]": "translate-y-0" }'
                     
                 >
-                    <IconShoppingCart /> 
-                    Comprar!
+                        <div className="text-white group-hover:translate-x-20 duration-300">
+                            <IconShoppingCart /> 
+                        </div>
+                    <p>Comprar!</p>
                 </button>
         </div>
     )
