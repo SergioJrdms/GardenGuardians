@@ -1,6 +1,5 @@
 import { Montserrat2 } from "@/pages/_app"
 import CartProductsQntd from "./CartProductsQntd"
-import { useState } from "react"
 
 //isso tem que vir exportado do componente dos produtos (fazer)
 export interface ProductsProps {
@@ -14,7 +13,7 @@ export interface ProductsProps {
 export default function CartCards(props: ProductsProps) {
 
     return (
-        <div className=" bg-white w-[100vh] h-[30vh] rounded-md">
+        <div className=" bg-white w-[100vh] h-1/2 rounded-md">
             <h1 className="font-bold text-2xl p-5 text-black">Categoria: {props.categoria}</h1>
             <hr className="bg-palette-mediumlight" />
 
@@ -29,8 +28,6 @@ export default function CartCards(props: ProductsProps) {
                 <p className="flex items-end">R$ {props.preco}</p>
 
             </div>
-
-            <hr className="bg-palette-mediumlight" />
 
         </div>
     )

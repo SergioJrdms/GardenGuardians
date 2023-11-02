@@ -15,7 +15,7 @@ export default function not_found() {
                 <h1 className={`text-black font-montserrat_alternate text-3xl ${Montserrat2.variable}`}>Ops! Parece que você se perdeu :( </h1>
                 <Link href={"./garden-guardians/home"} className={`
                 group
-              text-black  bg-palette-lightgreen hover:bg-black duration-300 w-1/2
+              text-black  bg-palette-lightgreen hover:bg-black duration-300 w-2/3
               hover:text-white text-lg rounded-md p-3 font-bold flex justify-center items-center
             `}>
                     <button className="flex flex-row gap-2 items-center">

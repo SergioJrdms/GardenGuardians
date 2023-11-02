@@ -8,7 +8,6 @@ import Footer from "@/components/Home/Footer/Footer";
 import { Montserrat2 } from "../../_app";
 
 export default function Home() {
-
   return (
     <>
       <header>

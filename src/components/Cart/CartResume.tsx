@@ -1,8 +1,9 @@
 import { Montserrat2 } from "@/pages/_app";
+import { ProductsProps } from "./CartCads";
 
 export default function CartResume() {
     return (
-        <div className="flex flex-col justify-center bg-white w-[50vh] h-[35vh] rounded-md -space-y-5">
+        <div className="flex flex-col justify-center bg-white w-[50vh] h-2/5 rounded-md -space-y-5">
             <div className="flex flex-col">
                 <div className="p-7">
                     <h1 className={`font-bold text-black text-lg font-montserrat_alternate ${Montserrat2.variable}`}>
