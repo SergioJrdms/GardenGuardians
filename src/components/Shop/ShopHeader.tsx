@@ -22,7 +22,6 @@ export default function ShopHeader() {
         flex flex-col gap-44
         bg-[url('https://i.pinimg.com/originals/fc/36/fa/fc36fa7816fe1847b3dcbc352f227a0f.jpg')]
         bg-no-repeat bg-cover h-96 bg-fixed
-        shadow-2xl
     `}>
             <header>
                 <Header />
