@@ -19,7 +19,7 @@ export default function hearts() {
                     <section className="flex flex-col items-center gap-4 text-palette-light">
                         <h1 className={`
                             font-montserrat_alternate text-7xl ${MontserratAlternates.variable}`}>
-                            Produtos que você curtiu!
+                            Novidades para você!
                         </h1>
                         <p className={`
                     flex flex-row items-center text-xl font-montserrat_alternate ${Montserrat2.variable}
@@ -33,7 +33,7 @@ export default function hearts() {
             <section className="bg-white pt-20">
                 <section className="flex flex-col gap-1 p-10 justify-center items-start h-40">
                     <h1 className={`text-black ${MontserratAlternates.variable} font-montserrat_alternate text-4xl`}>
-                        Que tal comprar?
+                        Nossos novos produtos
                     </h1>
                     <hr className="bg-palette-mediumgreen h-1 w-40" />
                 </section>

@@ -10,8 +10,11 @@ export default function shop() {
                 <ShopHeader />
             </header>
 
-            <section className="bg-palette-light flex p-10 justify-center">
-                <section>
+            <section className="bg-palette-light pt-10">
+                <section className="flex flex-col justify-center items-center">
+                    <CardsRender />
+                    <CardsRender />
+                    <CardsRender />
                     <CardsRender />
                 </section>
             </section>

@@ -30,7 +30,7 @@ export default function HeaderMenu() {
                 </div>
                 <p>Shop</p>
             </Link>
-            <Link href={'./novo'} className={`
+            <Link href={'./novos'} className={`
                     group flex flex-row items-center gap-3
                   hover:text-zinc-300 duration-300 tracking-tight 
                     hover:tracking-wide 

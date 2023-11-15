@@ -9,14 +9,14 @@ export default function HomeHistory(){
             bg-no-repeat bg-cover h-screen bg-fixed
             flex justify-center items-center
         `}>
-        <div className="flex flex-col justify-evenly items-center bg-palette-mediumlight h-60 w-1/2 opacity-80 rounded-md">
+        <div className="flex flex-col justify-evenly items-center bg-palette-mediumlight h-72 w-[75%] opacity-80 rounded-md">
           <h1 className={`text-black font-montserrat_alternate text-3xl ${Montserrat2.variable}`}>Nós temos o que o seu <span className="text-palette-mediumgreen">Jardim</span> precisa!</h1>
           <Link href={"/history"} className={`
               text-black  bg-palette-lightgreen hover:bg-black duration-300 w-1/2
               hover:text-white text-lg rounded-md p-2 font-bold flex justify-center items-center
             `}>
             <button>
-              Conheça mais sobre nós
+              Conheça mais sobre os GardenGuardians!
             </button>
           </Link>
         </div>

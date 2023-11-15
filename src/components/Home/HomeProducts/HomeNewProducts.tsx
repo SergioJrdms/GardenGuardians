@@ -11,7 +11,7 @@ export default function HomeNewProducts(props: NewProductCardProps){
              {props.product_img}
           </div>
           <div className="pt-2">
-            <p className="text-black">{props.product_name}</p>
+            <p className="text-black text-xl font-bold">{props.product_name}</p>
             <p className="text-palette-mediumgreen font-bold pt-2">R$ {props.product_price}</p>
           </div>
         </div>

@@ -17,7 +17,7 @@ export default function product() {
             <section className="bg-white">
                 <section className="flex flex-row p-32 ml-10 gap-7">
                     <ProductsImgs />
-                    <div className="flex flex-col gap-12 mt-5">
+                    <div className="flex flex-col gap-12 -mt-20">
                         <ProductInfos />
                         <section className="flex flex-row gap-5">
                             <ProductQntd />
@@ -27,7 +27,7 @@ export default function product() {
                                 </button>
                             </div>
                         </section>
-                        <button className={`bg-palette-dark hover:bg-palette-darkgreen w-[75%] duration-300 h-16 rounded-md pl-10 pr-10 font-bold font-montserrat_alternate tracking-widest ${Montserrat2.variable}`}>
+                        <button className={`bg-palette-dark hover:bg-palette-darkgreen w-full duration-300 h-16 rounded-md pl-10 pr-10 font-bold font-montserrat_alternate tracking-widest ${Montserrat2.variable}`}>
                             Comprar agora!
                         </button>
                     </div>
