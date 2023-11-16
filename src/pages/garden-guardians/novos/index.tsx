@@ -9,7 +9,7 @@ export default function hearts() {
             <header className="">
                 <div className={`
         flex flex-col gap-44
-        bg-[url('https://images.unsplash.com/photo-1532024802178-20dbc87a312a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=500&q=60')]
+        bg-black
         bg-no-repeat bg-cover h-96 bg-fixed
     `}>
                     <header>

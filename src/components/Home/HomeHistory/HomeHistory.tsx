@@ -11,7 +11,7 @@ export default function HomeHistory(){
         `}>
         <div className="flex flex-col justify-evenly items-center bg-palette-mediumlight h-72 w-[75%] opacity-80 rounded-md">
           <h1 className={`text-black font-montserrat_alternate text-3xl ${Montserrat2.variable}`}>Nós temos o que o seu <span className="text-palette-mediumgreen">Jardim</span> precisa!</h1>
-          <Link href={"/history"} className={`
+          <Link href={"./history"} className={`
               text-black  bg-palette-lightgreen hover:bg-black duration-300 w-1/2
               hover:text-white text-lg rounded-md p-2 font-bold flex justify-center items-center
             `}>

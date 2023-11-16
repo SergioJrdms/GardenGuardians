@@ -15,9 +15,9 @@ export default function product() {
             </section>
 
             <section className="bg-white">
-                <section className="flex flex-row p-32 ml-10 gap-7">
+                <section className="flex flex-row p-32 ml-10 gap-40">
                     <ProductsImgs />
-                    <div className="flex flex-col gap-12 -mt-20">
+                    <div className="flex flex-col gap-12">
                         <ProductInfos />
                         <section className="flex flex-row gap-5">
                             <ProductQntd />

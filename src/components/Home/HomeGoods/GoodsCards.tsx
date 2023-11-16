@@ -15,7 +15,7 @@ export default function GoodsCards(props: GoodsNames){
                 {props.name}
               </p>
               <button className={`
-                bg-palette-lightgreen hover:bg-black duration-300 w-full text-white text-lg rounded-sm p-2 font-bold
+                bg-palette-dark hover:bg-palette-mediumgreen duration-300 w-full text-white text-lg rounded-sm p-2 font-bold
               `}>
                 Ver {props.name}
               </button>
