@@ -43,7 +43,7 @@ export default function history() {
                     `}
                             data-replace='{ "translate-x-[-100%]": "translate-x-0" }'
                         >
-                            Descubra a nossa <br></br> <span className="text-palette-lightgreen">História</span>!
+                            Descubra a nossa <br></br> <span className="text-palette-lightgreen">História</span>
                         </h1>
                     </span>
                     <span
