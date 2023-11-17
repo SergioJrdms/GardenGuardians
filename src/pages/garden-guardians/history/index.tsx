@@ -1,9 +1,9 @@
 import Header from "@/components/Home/Header/Header";
 import { Montserrat2, MontserratAlternates } from "@/pages/_app";
+import { IconChevronDown } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 
 export default function history() {
-    const [mostrarComponente, setMostrarComponente] = useState(false);
 
     useEffect(() => {
         const replacers = document.querySelectorAll('[data-replace]');
@@ -18,11 +18,6 @@ export default function history() {
 
     return (
         <div className="overflow-y-hidden ">
-            {mostrarComponente && (
-                <section className="bg-zinc-100  w-full h-[100vh]  ">
-                    <p>Conteúdo do componente aqui</p>
-                </section>
-            )}
             <div
                 className={`
                 bg-[url('https://images.unsplash.com/photo-1552152974-19b9caf99137?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBwbGFudHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80')] 
@@ -30,44 +25,86 @@ export default function history() {
                 flex items-center 
             `}>
                 <div><Header /></div>
-                <div className="flex flex-col p-40 gap-7">
-                    <p
-                        className={`
+                <div className="flex flex-col p-40 gap-20">
+                    <span>
+                        <p
+                            className={`
                         font-montserrat_alternate text-3xl select-none ${Montserrat2.variable}
                         duration-1000 transition-all opacity-0 
                     `}
-                        data-replace='{ "opacity-0": "opacity-1" }'
-                    >
-                        Saiba mais sobre os GardenGuardians
-                    </p>
-                    <h1
-                        className={`
+                            data-replace='{ "opacity-0": "opacity-1" }'
+                        >
+                            Saiba mais sobre os GardenGuardians
+                        </p>
+                        <h1
+                            className={`
                         font-montserrat_alternate  text-8xl select-none ${MontserratAlternates.variable}
                         duration-1000 relative transform transition-all translate-x-[-100%] ease-out
                     `}
+                            data-replace='{ "translate-x-[-100%]": "translate-x-0" }'
+                        >
+                            Descubra a nossa <br></br> <span className="text-palette-lightgreen">História</span>!
+                        </h1>
+                    </span>
+                    <span
+                        className="animate-bounce"
                         data-replace='{ "translate-x-[-100%]": "translate-x-0" }'
                     >
-                        Descubra a nossa <br></br> <span className="text-palette-lightgreen">História</span>!
-                    </h1>
-                    <button
-                        className={`
-                        group
-                        flex  items-center justify-center space-x-20 
-                      bg-palette-light mt-5 text-palette-dark text-xl rounded-sm p-2 w-72 h-14 font-bold hover:bg-palette-lightgreen  
-                        duration-300 hover:text-white tracking-tight hover:tracking-wide
-                        relative transform transition-all translate-y-[-100%] ease-out    
-                    `}
-                        data-replace='{ "translate-y-[-100%]": "translate-y-0" }'
-
-                        onClick={() => setMostrarComponente(!mostrarComponente)}
-
-                    >
-
-                        <p>Clica aqui pra ver!</p>
-                    </button>
-
+                        <IconChevronDown className="w-16 h-16 cursor-pointer" />
+                    </span>
                 </div>
             </div>
+
+            <section className="bg-palette-light h-screen">
+                <section className="flex flex-col p-20 justify-center items-start">
+                    <h1 className={`text-black ${MontserratAlternates.variable} font-montserrat_alternate text-4xl`}>
+                        Conheça mais sobre nós
+                    </h1>
+                    <hr className="bg-palette-mediumgreen h-1 w-40" />
+                </section>
+
+                <section className="flex justify-center items-center pt-10">
+                    <div className="grid text-black grid-cols-3 gap-16 select-none">
+
+                        <div className="border border-zinc-300 hover:border-zinc-800 duration-300 p-10 rounded-lg w-[50vh]">
+                            <div className="flex flex-col gap-8">
+                                <span className="flex flex-col justify-center items-center">
+                                    <p className={`font-extrabold font-montserrat_alternate text-2xl ${Montserrat2.variable}`}>Nossa história</p>
+                                    <hr className="bg-palette-mediumgreen h-[0.3vh] w-[7vh]" />
+                                </span>
+                                <p className="flex justify-center text-lg">
+                                    Sophia Greenfield, uma entusiasta da natureza, deu vida à GardenGuardians, uma empresa dedicada a transformar cada lar em um paraíso verde. Com uma visão clara de conectar as pessoas à beleza da natureza, a GardenGuardians oferece uma variedade exuberante de plantas, ferramentas de jardinagem de alta qualidade e serviços especializados. Desde flores exóticas até consultorias personalizadas, a empresa visa inspirar, educar e capacitar, tornando-se um farol verde para aqueles que buscam cultivar seus próprios oásis de serenidade em meio à agitação da vida moderna. Junte-se à GardenGuardians e descubra a alegria de ser o guardião do seu próprio jardim, onde a natureza encontra um lar acolhedor em cada ambiente.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="border border-zinc-300 hover:border-zinc-800 duration-300 p-10 rounded-lg w-[50vh]">
+                            <div className="flex flex-col gap-8">
+                                <span className="flex flex-col justify-center items-center">
+                                    <p className={`font-extrabold font-montserrat_alternate text-2xl ${Montserrat2.variable}`}>Porque nos escolher?</p>
+                                    <hr className="bg-palette-mediumgreen h-[0.3vh] w-[10vh]" />
+                                </span>
+                                <p className="flex justify-center text-lg">
+                                    Ao decidir criar seu próprio refúgio verde, escolher a GardenGuardians significa optar pela excelência e paixão pela jardinagem. Nossa empresa, fundada por Sophia Greenfield e sua equipe de entusiastas, não apenas oferece uma seleção cuidadosamente curada de plantas exuberantes, ferramentas de jardinagem ergonômicas e acessórios encantadores, mas também proporciona uma experiência holística para transformar sua visão em realidade. Com a GardenGuardians, você não apenas compra produtos, mas adquire uma parceria dedicada a inspirar, educar e apoiar, tornando-se o guardião de seu próprio oásis verde. Escolha a GardenGuardians e descubra como nossa paixão pela natureza e compromisso com a qualidade podem fazer a diferença em cada jardim, elevando sua experiência de jardinagem a novos patamares.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="border border-zinc-300 hover:border-zinc-800 duration-300 p-10 rounded-lg w-[50vh]">
+                            <div className="flex flex-col gap-8">
+                                <span className="flex flex-col justify-center items-center">
+                                    <p className={`font-extrabold font-montserrat_alternate text-2xl ${Montserrat2.variable}`}>Nosso futuro</p>
+                                    <hr className="bg-palette-mediumgreen h-[0.3vh] w-[5vh]" />
+                                </span>
+                                <p className="flex justify-center text-lg">
+                                    Enquanto a GardenGuardians floresce no presente, nosso olhar está firmemente fixado em um futuro repleto de crescimento e inovação. Nossa visão é expandir as fronteiras do verde, trazendo mais diversidade de plantas e produtos inovadores para os lares ao redor do mundo. Planejamos lançar iniciativas educacionais ainda mais robustas, oferecendo tutoriais interativos, workshops e recursos inspiradores para fortalecer a conexão das pessoas com a jardinagem. Além disso, estamos explorando parcerias sustentáveis e práticas ambientais para garantir que, à medida que prosperamos, continuemos sendo guardiões responsáveis da natureza. Na GardenGuardians, o futuro se desenha com paisagens ainda mais vibrantes, jardins florescentes e uma comunidade global unida pelo amor à natureza. Junte-se a nós enquanto cultivamos um futuro onde cada lar é um testemunho vivo da beleza e da serenidade que a natureza proporciona.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </section>
         </div>
     )
 }
