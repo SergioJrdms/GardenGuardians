@@ -27,3 +27,22 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Estilize a barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (trilha) da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #ba1e1e00;
+}
+
+/* Handle (alça) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: #868686;
+}
+
+/* Handle (alça) ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

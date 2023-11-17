@@ -1,7 +1,4 @@
 import { IconHeart } from "@tabler/icons-react"
-import * as Toast from '@radix-ui/react-toast';
-import { useState } from "react";
-import ToastDemo from "./Toast";
 
 interface ProductCardProps {
   product_img: any
