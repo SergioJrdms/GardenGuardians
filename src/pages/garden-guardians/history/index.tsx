@@ -1,21 +1,8 @@
 import Header from "@/components/Home/Header/Header";
 import { Montserrat2, MontserratAlternates } from "@/pages/_app";
 import { IconChevronDown } from "@tabler/icons-react";
-import { useEffect, useState } from "react";
 
 export default function history() {
-
-    useEffect(() => {
-        const replacers = document.querySelectorAll('[data-replace]');
-        for (let i = 0; i < replacers.length; i++) {
-            const replaceClasses = JSON.parse(replacers[i].getAttribute('data-replace')!.replace(/'/g, '"'));
-            Object.keys(replaceClasses).forEach((key) => {
-                replacers[i].classList.remove(key);
-                replacers[i].classList.add(replaceClasses[key]);
-            });
-        }
-    }, []);
-
     return (
         <div className="overflow-y-hidden ">
             <div
@@ -30,25 +17,20 @@ export default function history() {
                         <p
                             className={`
                         font-montserrat_alternate text-3xl select-none ${Montserrat2.variable}
-                        duration-1000 transition-all opacity-0 
                     `}
-                            data-replace='{ "opacity-0": "opacity-1" }'
                         >
                             Saiba mais sobre os GardenGuardians
                         </p>
                         <h1
                             className={`
                         font-montserrat_alternate  text-8xl select-none ${MontserratAlternates.variable}
-                        duration-1000 relative transform transition-all translate-x-[-100%] ease-out
                     `}
-                            data-replace='{ "translate-x-[-100%]": "translate-x-0" }'
                         >
                             Descubra a nossa <br></br> <span className="text-palette-lightgreen">História</span>
                         </h1>
                     </span>
                     <span
                         className="animate-bounce"
-                        data-replace='{ "translate-x-[-100%]": "translate-x-0" }'
                     >
                         <IconChevronDown className="w-16 h-16 cursor-pointer" />
                     </span>
