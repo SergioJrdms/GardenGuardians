@@ -1,11 +1,11 @@
 interface GoodsNames{
-    name: String
+    name: String,
 }
 
 export default function GoodsCards(props: GoodsNames){
     return(
         <div className={`
-            text-palette-dark bg-palette-mediumlight h-[30rem] w-96 
+            text-palette-dark  h-[30rem] w-96 
              flex flex-col justify-end
           `}>
             <div className={`

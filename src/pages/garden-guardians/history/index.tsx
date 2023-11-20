@@ -12,7 +12,7 @@ export default function history() {
                 flex items-center 
             `}>
                 <div><Header /></div>
-                <div className="flex flex-col p-40 gap-20">
+                <div className="flex flex-col p-40 gap-20 mt-20">
                     <span>
                         <p
                             className={`
@@ -37,7 +37,7 @@ export default function history() {
                 </div>
             </div>
 
-            <section className="bg-palette-light h-screen">
+            <section className="bg-palette-light">
                 <section className="flex flex-col p-20 justify-center items-start">
                     <h1 className={`text-black ${MontserratAlternates.variable} font-montserrat_alternate text-4xl`}>
                         Conheça mais sobre nós
@@ -46,9 +46,9 @@ export default function history() {
                 </section>
 
                 <section className="flex justify-center items-center ">
-                    <div className="grid text-black grid-cols-3 gap-16 select-none">
+                    <div className="grid text-black grid-cols-3 gap-16 md:gap-10 select-none">
 
-                        <div className="border border-zinc-300 hover:border-zinc-800 duration-300 p-10 rounded-lg w-[50vh] group">
+                        <div className="border border-zinc-300 hover:border-zinc-800 duration-300 p-10 rounded-lg w-[50vh] md:w-[60vh] group">
                             <div className="flex flex-col gap-8">
                                 <span className="flex flex-col justify-center items-center">
                                     <p className={`font-extrabold font-montserrat_alternate text-2xl ${Montserrat2.variable} group-hover:scale-105 duration-300`}>Nossa história</p>
@@ -60,7 +60,7 @@ export default function history() {
                             </div>
                         </div>
 
-                        <div className="border border-zinc-300 hover:border-zinc-800 duration-300 p-10 rounded-lg w-[50vh] group">
+                        <div className="border border-zinc-300 hover:border-zinc-800 duration-300 p-10 rounded-lg w-[50vh] md:w-[60vh] group">
                             <div className="flex flex-col gap-8">
                                 <span className="flex flex-col justify-center items-center">
                                     <p className={`font-extrabold font-montserrat_alternate text-2xl ${Montserrat2.variable} group-hover:scale-105 duration-300`}>Porque nos escolher?</p>
@@ -72,7 +72,7 @@ export default function history() {
                             </div>
                         </div>
 
-                        <div className="border border-zinc-300 hover:border-zinc-800 duration-300 p-10 rounded-lg w-[50vh] group">
+                        <div className="border border-zinc-300 hover:border-zinc-800 duration-300 p-10 rounded-lg w-[50vh] md:w-[60vh] group">
                             <div className="flex flex-col gap-8">
                                 <span className="flex flex-col justify-center items-center">
                                     <p className={`font-extrabold font-montserrat_alternate text-2xl ${Montserrat2.variable} group-hover:scale-105 duration-300`}>Nosso futuro</p>
