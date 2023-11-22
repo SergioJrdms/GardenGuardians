@@ -46,7 +46,7 @@ export default function history() {
                 </section>
 
                 <section className="flex justify-center items-center ">
-                    <div className="grid text-black grid-cols-3 gap-16 md:gap-10 select-none">
+                    <div className="grid text-black grid-cols-3 gap-16 md:gap-10 select-none p-10">
 
                         <div className="border border-zinc-300 hover:border-zinc-800 duration-300 p-10 rounded-lg w-[50vh] md:w-[60vh] group">
                             <div className="flex flex-col gap-8">

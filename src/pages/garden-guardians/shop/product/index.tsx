@@ -3,11 +3,43 @@ import ProductInfos from "@/components/Shop/Products/ProductInfos";
 import ProductQntd from "@/components/Shop/Products/ProductQntd";
 import ProductsHeader from "@/components/Shop/Products/ProductsHeader";
 import ProductsImgs from "@/components/Shop/Products/ProductsImgs";
+import { executeQuery } from "@/pages/api/queries";
 import { Montserrat2 } from "@/pages/_app";
 
-export default function product() {
+const fetchData = async () => {
+    try {
+        const query = 'SELECT * FROM products';
+        const produtos = await executeQuery(query);
+        console.log(produtos)
+        return produtos;
+    } catch (error) {
+        console.error('Erro ao executar a consulta:', error);
+        return [];
+    }
+};
+
+export const getServerSideProps = async () => {
+    const produtos = await fetchData();
+
+    console.log(produtos)
+
+    return {
+        props: {
+            produtos,
+        },
+    };
+};
+
+interface Product {
+    id: number;
+    product_name: string;
+    product_price: number;
+    product_desc: string;
+  }
+  
 
 
+export default function product(props: Product) {
     return (
         <>
             <section>
