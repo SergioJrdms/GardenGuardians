@@ -1,74 +1,65 @@
 import Footer from "@/components/Home/Footer/Footer";
-import ProductInfos from "@/components/Shop/Products/ProductInfos";
 import ProductQntd from "@/components/Shop/Products/ProductQntd";
 import ProductsHeader from "@/components/Shop/Products/ProductsHeader";
 import ProductsImgs from "@/components/Shop/Products/ProductsImgs";
-import { executeQuery } from "@/pages/api/queries";
 import { Montserrat2 } from "@/pages/_app";
+import { IconHeart } from "@tabler/icons-react";
 
-const fetchData = async () => {
-    try {
-        const query = 'SELECT * FROM products';
-        const produtos = await executeQuery(query);
-        console.log(produtos)
-        return produtos;
-    } catch (error) {
-        console.error('Erro ao executar a consulta:', error);
-        return [];
-    }
-};
-
-export const getServerSideProps = async () => {
-    const produtos = await fetchData();
-
-    console.log(produtos)
-
-    return {
-        props: {
-            produtos,
-        },
-    };
-};
-
-interface Product {
-    id: number;
-    product_name: string;
-    product_price: number;
-    product_desc: string;
-  }
-  
-
-
-export default function product(props: Product) {
+export default function ProductPage() {
     return (
         <>
             <section>
                 <ProductsHeader />
             </section>
 
+           
+
             <section className="bg-white">
-                <section className="flex flex-row p-32 ml-10 gap-40">
-                    <ProductsImgs />
-                    <div className="flex flex-col gap-12">
-                        <ProductInfos />
-                        <section className="flex flex-row gap-5">
-                            <ProductQntd />
-                            <div className="flex items-center">
-                                <button className={`bg-palette-darkgreen hover:bg-palette-dark duration-300 h-16 rounded-md pl-10 pr-10 font-bold font-montserrat_alternate tracking-widest ${Montserrat2.variable}`}>
-                                    Adicionar ao Carrinho
-                                </button>
+                    <section className="flex flex-row p-32 ml-10 gap-40">
+                        <ProductsImgs img={""} />
+                        <div className="flex flex-col gap-12">
+                            <div className="flex flex-row justify-between mr-3">
+                                <div className="flex flex-col gap-4 text-2xl">
+                                    <p className={`text-black font-montserrat_alternate ${Montserrat2.variable} font-bold text-3xl`}>
+                                      
+                                    </p>
+                                    <p className={`flex flex-row gap-3 text-palette-mediumgreen font-montserrat_alternate ${Montserrat2.variable}`}>
+                                        R$  <span>BRL</span>
+                                    </p>
+                                </div>
+                                <span className={`
+                                    flex justify-center items-center cursor-pointer
+                                    text-black border border-zinc-600 rounded-full h-10 w-10
+                                    hover:bg-palette-lightgreen hover:border-palette-lightgreen hover:text-white duration-300
+                                `}>
+                                    <IconHeart className="w-5" />
+                                </span>
                             </div>
-                        </section>
-                        <button className={`bg-palette-dark hover:bg-palette-darkgreen w-full duration-300 h-16 rounded-md pl-10 pr-10 font-bold font-montserrat_alternate tracking-widest ${Montserrat2.variable}`}>
-                            Comprar agora!
-                        </button>
-                    </div>
-                </section>
+                            <hr className="bg-palette-darkgreen h-[0.2vh] w-[60vh]" />
+                            <div className="w-[60vh]">
+                                <p className="text-zinc-600">
+                             
+                                </p>
+                            </div>
+                            <section className="flex flex-row gap-5">
+                                <ProductQntd />
+                                <div className="flex items-center">
+                                    <button className={`bg-palette-darkgreen hover:bg-palette-dark duration-300 h-16 rounded-md pl-10 pr-10 font-bold font-montserrat_alternate tracking-widest ${Montserrat2.variable}`}>
+                                        Adicionar ao Carrinho
+                                    </button>
+                                </div>
+                            </section>
+                            <button className={`bg-palette-dark hover:bg-palette-darkgreen w-full duration-300 h-16 rounded-md pl-10 pr-10 font-bold font-montserrat_alternate tracking-widest ${Montserrat2.variable}`}>
+                                Comprar agora!
+                            </button>
+                        </div>
+                    </section>
             </section>
+
 
             <footer className="text-black">
                 <Footer />
             </footer>
         </>
-    )
+    );
 }
