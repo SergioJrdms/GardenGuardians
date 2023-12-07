@@ -8,9 +8,9 @@ export default function HomeNewProductsRender(){
                 Produtos novos <span className="text-palette-lightgreen">Semanalmente</span>
             </h1>
             <div className="flex flex-row gap-4">
-                <HomeNewProducts product_img={"IMG"} product_name="Produto Novo 1" product_price={50.00} />
-                <HomeNewProducts product_img={"IMG"} product_name="Produto Novo 2" product_price={30.00} />
-                <HomeNewProducts product_img={"IMG"} product_name="Produto Novo 3" product_price={90.00} />
+                <HomeNewProducts product_img={" "} product_name="Produto Novo 1" product_price={50.00} />
+                <HomeNewProducts product_img={" "} product_name="Produto Novo 2" product_price={30.00} />
+                <HomeNewProducts product_img={" "} product_name="Produto Novo 3" product_price={90.00} />
             </div>
         </section>
     )

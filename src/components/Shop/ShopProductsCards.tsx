@@ -14,7 +14,7 @@ export default function ShopProductsCards(produtos: Product) {
         <Link href={'./shop/product'}>
             <div className="bg-palette-light h-[23rem] duration-300 hover:cursor-pointer group">
                 <div className="bg-palette-mediumlight w-72 h-72 hover:scale-105 duration-500 text-black">
-                    {produtos.product_name}
+
                 </div>
                 <div className="pt-2">
                     <p className="text-black font-bold text-xl">{produtos.product_name}</p>

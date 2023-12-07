@@ -30,6 +30,7 @@ export default function HomeGoods() {
                     id="animacao-card"
                     className={`
                         duration-500 relative transform transition-all translate-y-0 ease-out
+                        bg-palette-mediumlight
                         ${isVisible ? 'translate-y-0' : 'translate-y-[100%]'}
                 `}>
                     <GoodsCards name={"Plantas"} />
@@ -38,6 +39,7 @@ export default function HomeGoods() {
                     id="animacao-card-2"
                     className={`
                         duration-700 relative transform transition-all translate-y-0 ease-out
+                        bg-palette-mediumlight
                         ${isVisible ? 'translate-y-0' : 'translate-y-[100%]'}
                 `}>
                     <GoodsCards name={"Equipamentos"} />
@@ -45,7 +47,8 @@ export default function HomeGoods() {
                 <span
                     id="animacao-card-3"
                     className={`
-                        duration-1000 relative transform transition-all translate-y-0 ease-out
+                        duration-1000 relative transform transition-all translate-y-0 ease-
+                        bg-palette-mediumlight
                         ${isVisible ? 'translate-y-0' : 'translate-y-[100%]'}
                 `}>
                     <GoodsCards name={"Variados"} />
